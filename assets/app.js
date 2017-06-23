@@ -9,7 +9,7 @@ $(document).ready(function() {
  var numResults = 5;
 
  //URL Base
- var queryURLBase = "http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" +
+ var queryURLBase = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" +
      authKey + "&q=";
 
  var articleCounter = 0;
@@ -208,7 +208,7 @@ $(document).ready(function() {
          var apiKey = "api/5b12c8b5120a5684"
          var state = $("#state-input").val().trim().toUpperCase()
          var city = $("#city-input").val().trim().toUpperCase()
-         var queryURL = "http://api.wunderground.com/" + apiKey + "/conditions/q/" + state + "/" + city + ".json"
+         var queryURL = "https://api.wunderground.com/" + apiKey + "/conditions/q/" + state + "/" + city + ".json"
 
 
          $.ajax({
